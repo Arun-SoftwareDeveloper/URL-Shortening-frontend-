@@ -1,0 +1,83 @@
+/* Styles for the login container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, hsl(191, 28%, 66%), #f0c0c0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-login {
+  align-items: center;
+  /* justify-items: center; */
+  margin-bottom: 450px;
+  position: relative;
+  left: 250px;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: rgb(48, 47, 47);
+  animation: bounce 1s infinite alternate;
+}
+
+.back-btn {
+  font-size: 30px;
+  margin-bottom: 360px;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.login-form-container {
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles for the submit button */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for toast container */
+.Toastify__toast-container {
+  z-index: 9999;
+}

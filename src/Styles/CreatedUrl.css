@@ -1,0 +1,54 @@
+.created-urls-container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.table-title {
+  font-size: 44px;
+  margin-bottom: 10px;
+  margin-left: 230px;
+  animation: bounce 1s infinite;
+  font-weight: lighter;
+  font-family: "Times New Roman", serif;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.urls-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.urls-table th,
+.urls-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.urls-table th {
+  background-color: #f0f0f0;
+}
+
+.urls-table tr:hover {
+  background-color: #f0f8ff;
+}
+
+.urls-table td:first-child {
+  font-weight: bold;
+}

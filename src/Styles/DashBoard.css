@@ -1,0 +1,96 @@
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  background-color: #ffffff;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  position: relative;
+  left: 550px;
+  font-size: 50px;
+  font-weight: lighter;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: rgb(48, 47, 47);
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Table Styling */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 12px 18px;
+  border-bottom: 1px solid #f2f2f2;
+  text-align: left;
+  font-size: 16px;
+}
+
+.dashboard-table th {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Loading Message */
+.loading-message {
+  font-size: 18px;
+  font-style: italic;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Button Styling */
+.create-btn,
+.list-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  margin-left: 520px;
+  margin-top: 50px;
+}
+
+.create-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.list-btn {
+  background-color: #28a745;
+  color: white;
+  margin-left: 10px;
+}
+
+.create-btn:hover,
+.list-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .dashboard-table th,
+  .dashboard-table td {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}

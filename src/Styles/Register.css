@@ -1,0 +1,156 @@
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, hsl(191, 28%, 66%), #f0c0c0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-form-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 450px; /* Same width as the image */
+  height: 400px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-left: 20px; /* Add margin between image and form */
+  transition: transform 0.3s ease;
+}
+
+.register-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.title {
+  align-items: center;
+  /* justify-items: center; */
+  margin-bottom: 600px;
+  position: relative;
+  left: 520px;
+  bottom: 300px;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: rgb(48, 47, 47);
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.input {
+  align-items: center;
+  width: 400px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.login-btn-reg {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 450px;
+  height: 30px;
+}
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.Toastify__toast {
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.Toastify__toast--info {
+  background-color: #17a2b8;
+}
+
+.Toastify__toast--success {
+  background-color: #28a745;
+}
+
+.Toastify__toast--error {
+  background-color: #dc3545;
+  color: black;
+}
+
+.Toastify__progress-bar {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Styling for the image */
+.register-img {
+  max-width: 450px;
+  height: 440px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.register-img:hover {
+  transform: scale(1.05);
+}
+
+.register-form:hover {
+  transform: scale(1.05);
+}
+
+.login {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8097c9;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
